@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  background-color: rgb(255, 255, 255);
+}
+
+
+body {
+  width: 25vw;
+  height: 55vh;
+  position: relative;
+  top: 20vh;
+  transform: translate(35vw);
+  border: 1px solid rgba(32, 32, 32, 0.256);
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  /* box-shadow: rgba(50, 50, 93, 0.11) 0px 50px 100px -20px inset, rgb(0, 0, 0, 0.3)
+ 0px 30px 60px -30px, rgba(10, 37, 64, 0.185) 0px -2px 6px 0px inset;  } */
+  box-shadow: rgba(222, 225, 225, 0.358) 0px 50px 100px -20px inset, rgba(0, 0, 0, 0.269) 0px 30px 60px -30px, rgba(21, 20, 20, 0.105)0px -3px 6px 2px inset;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+
+input {
+  padding: 4px;
+  height: 45px;
+  width: 23vw;
+  border-radius: 5px;
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.715);
+  text-align: end;
+  margin: 2px;
+  text-decoration: none;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(50, 50, 93, 0.11) 0px 50px 100px -20px inset, rgb(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.185) 0px -2px 6px 0px inset;
+}
+
+button {
+  margin: 4px;
+  height: 7vh;
+  width: 3vw;
+  font-weight: bold;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.703);
+  overflow: hidden;
+  border-radius: 7px;
+  border: none;
+  box-shadow: rgba(236, 236, 237, 0.075) 0px 50px 100px -20px inset, rgba(0, 0, 0, 0) 0px 30px 60px -30px, rgba(18, 18, 19, 0.251) 0px -1px 2px 0px inset;
+}
+
+
+
+ul .equal {
+  height: 6.7vh;
+  width: 7vw;
+  font-size: 30px;
+  position: absolute;
+  margin-left: 10px;
+  background-color: rgb(255, 81, 0);
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.button {
+  margin-top: 15px;
+}
+
+ul .c {
+  color: rgb(255, 81, 0);
+}
+
+ul .ac {
+  color: rgb(255, 81, 0);
+}
+
+::placeholder {
+  font-size: 25px;
+  text-align: end;
+  margin: 2px;
+}
+
+button:hover {
+  background-color: rgb(255, 81, 0);
+  color: #ffffff;
+  transition: ease-in-out 200ms;
+}
+
+ul .equal:hover {
+
+  background-color: #53fc44;
+  color: black;
+}
+
+ul .c:hover {
+  background-color: rgb(255, 81, 0);
+  color: rgb(255, 255, 255);
+}
+
+ul .ac:hover {
+  background-color: rgb(255, 81, 0);
+  color: rgb(255, 255, 255);
+}
+
+.custom .color ::before {
+  opacity: 0;
+}
+
+
+
+/* Risponsiveness */
+
+@media only screen and (max-width: 1024px) {
+  body {
+    width: 45vw;
+    height: 45vh;
+    right: 58px;
+  }
+
+  .input input {
+    height: 45px;
+    width: 40vw;
+  }
+
+  .button button {
+    margin: 2px -0.1px;
+    padding: 6.5px px;
+    font-size: 15px;
+    height: 5.5vh;
+    width: 7vw;
+  }
+
+  .button1 button {
+    margin: 2px -0.1px;
+    padding: 6.5px px;
+    font-size: 15px;
+    height: 5.5vh;
+    width: 7vw;
+  }
+
+  .button2 button {
+    margin: 2px -0.1px;
+    padding: 6.5px px;
+    font-size: 15px;
+    height: 5.5vh;
+    width: 7vw;
+  }
+
+  .button3 button {
+    margin: 2px -0.1px;
+    padding: 6.5px px;
+    font-size: 15px;
+    height: 5.5vh;
+    width: 7vw;
+  }
+
+  .button3 .equal {
+    margin-left: 5px;
+    width: 14vw;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  body {
+    width: 85vw;
+    height: 45vh;
+    right: 58px;
+  }
+
+  .input input {
+    height: 45px;
+    width: 75vw;
+  }
+
+  .button button {
+    margin: 2px -0.1px;
+    padding: 6.5px px;
+    font-size: 15px;
+    height: 5.5vh;
+    width: 11.5vw;
+  }
+
+  .button1 button {
+    margin: 2px -0.1px;
+    padding: 6.5px px;
+    font-size: 15px;
+    height: 5.5vh;
+    width: 11.5vw;
+  }
+
+  .button2 button {
+    margin: 2px -0.1px;
+    padding: 6.5px px;
+    font-size: 15px;
+    height: 5.5vh;
+    width: 11.5vw;
+  }
+
+  .button3 button {
+    margin: 2px -0.1px;
+    padding: 6.5px px;
+    font-size: 15px;
+    height: 5.5vh;
+    width: 11.5vw;
+  }
+
+  .button3 .equal {
+    margin-left: 5px;
+    width: 24.5vw;
+  }
+}
